@@ -48,7 +48,7 @@ TEST(IdentityTest, check_is_transparent) {
     auto       it        = std::find(std::begin(container), std::end(container), 3);
     EXPECT_EQ(3, *it);
     auto it_with_id = std::find(std::begin(container), std::end(container), id(3));
-    EXPECT_EQ(3, *it_with_id);
+    EXPECT_EQ(4, *it_with_id);
 
     EXPECT_EQ(it, it_with_id);
 #endif
