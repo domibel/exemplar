@@ -48,7 +48,7 @@ SPDX-License-Identifier: Apache-2.0 WITH LLVM-exception
 -->
 
 <!-- markdownlint-disable-next-line line-length -->
-![Library Status](https://raw.githubusercontent.com/bemanproject/beman/refs/heads/main/images/badges/beman_badge-beman_library_under_development.svg) ![Continuous Integration Tests](https://github.com/bemanproject/exemplar/actions/workflows/ci_tests.yml/badge.svg) ![Lint Check (pre-commit)](https://github.com/bemanproject/exemplar/actions/workflows/pre-commit-check.yml/badge.svg) [![Coverage](https://coveralls.io/repos/github/bemanproject/exemplar/badge.svg?branch=main)](https://coveralls.io/github/bemanproject/exemplar?branch=main) ![Standard Target](https://github.com/bemanproject/beman/blob/main/images/badges/cpp29.svg)
+![Library Status](https://raw.githubusercontent.com/bemanproject/beman/refs/heads/main/images/badges/beman_badge-beman_library_under_development.svg) ![Continuous Integration Tests](https://github.com/bemanproject/exemplar/actions/workflows/ci_tests.yml/badge.svg) ![Lint Check (pre-commit)](https://github.com/bemanproject/exemplar/actions/workflows/pre-commit-check.yml/badge.svg) [![Coverage](https://coveralls.io/repos/github/bemanproject/exemplar/badge.svg?branch=main)](https://coveralls.io/github/bemanproject/exemplar?branch=main) ![Standard Target](https://github.com/bemanproject/beman/blob/main/images/badges/cpp29.svg) [![Compiler Explorer Example](https://img.shields.io/badge/Try%20it%20on%20Compiler%20Explorer-grey?logo=compilerexplorer&logoColor=67c52a)](https://godbolt.org/z/4qEPK87va)
 
 `beman.exemplar` is a minimal C++ library conforming to [The Beman Standard](https://github.com/bemanproject/beman/blob/main/docs/beman_standard.md).
 This can be used as a template for those intending to write Beman libraries.
@@ -147,8 +147,10 @@ You can disable building tests by setting CMake option `BEMAN_EXEMPLAR_BUILD_TES
 | GCC        | 15-13   | C++26-C++17   | libstdc++         |
 | GCC        | 12-11   | C++23-C++17   | libstdc++         |
 | Clang      | 22-19   | C++26-C++17   | libstdc++, libc++ |
-| Clang      | 18-17   | C++26-C++17   | libc++            |
-| Clang      | 18-17   | C++20, C++17  | libstdc++         |
+| Clang      | 18      | C++26-C++17   | libc++            |
+| Clang      | 18      | C++23-C++17   | libstdc++         |
+| Clang      | 17      | C++26-C++17   | libc++            |
+| Clang      | 17      | C++20, C++17  | libstdc++         |
 | AppleClang | latest  | C++26-C++17   | libc++            |
 | MSVC       | latest  | C++23         | MSVC STL          |
 
